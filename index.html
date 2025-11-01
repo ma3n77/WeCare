@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeCare - Integrated Health & Care</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="images/llc.jpeg">
+    <link rel="preconnect" href="https://rsms.me/">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'brand-teal': '#0D9488',
+                        'brand-gold': '#F59E0B',
+                        'brand-blue': '#0EA5E9',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 font-sans">
+
+    <!-- Header -->
+    <header id="main-header" class="bg-white/90 backdrop-blur-lg sticky top-0 z-50 shadow-md">
+        <div id="header-container" class="container mx-auto px-6 py-2 flex justify-between items-center transition-all duration-300">
+            <a href="#" title="WeCare Home">
+                <img id="logo" src="images/llc.jpeg" alt="WeCare Logo" class="h-28 rounded-md transition-all duration-300">
+            </a>
+            <nav class="hidden md:flex space-x-8 items-center">
+                <a href="#labs" class="text-gray-600 hover:text-brand-teal transition-colors duration-300">WeCare Labs</a>
+                <a href="#dent" class="text-gray-600 hover:text-brand-teal transition-colors duration-300">WeCare Dent</a>
+                <a href="#contact" class="text-gray-600 hover:text-brand-teal transition-colors duration-300">Contact</a>
+            </nav>
+            <a href="#contact" class="hidden md:inline-block bg-gradient-to-r from-brand-teal to-teal-600 text-white px-6 py-2 rounded-full hover:shadow-lg hover:scale-105 transform transition-all duration-300">Book Now</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="relative text-center py-24 md:py-40 px-6 bg-gradient-to-br from-teal-50 via-white to-sky-50">
+            <div class="container mx-auto">
+                <h1 class="text-4xl md:text-6xl font-extrabold text-gray-800 leading-tight">
+                    Integrated <span class="text-brand-teal">Health & Care</span>, <br class="hidden md:inline"> All in One Place.
+                </h1>
+                <p class="mt-6 text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
+                    Experience seamless access to premier medical laboratory and dental services. Your health is our priority.
+                </p>
+                <a href="#services" class="mt-10 inline-block bg-brand-teal text-white text-lg px-10 py-4 rounded-xl shadow-lg hover:shadow-xl hover:scale-105 transition-all transform">
+                    Explore Our Services
+                </a>
+            </div>
+        </section>
+
+        <!-- Services Overview -->
+        <section id="services" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="grid md:grid-cols-2 gap-8 md:gap-12" style="perspective: 1000px;">
+                    
+                    <!-- WeCare Labs Card -->
+                    <a href="#labs" id="labs" class="group relative min-h-[450px] flex flex-col justify-end p-8 rounded-2xl shadow-xl overflow-hidden bg-cover bg-center transition-all duration-500 ease-in-out [transform-style:preserve-3d] hover:shadow-2xl hover:[transform:rotateY(15deg)]" style="background-image: url('images/labs.jpeg');">
+                        <video autoplay loop muted playsinline class="absolute top-1/2 left-1/2 w-auto min-w-full min-h-full max-w-none -translate-x-1/2 -translate-y-1/2 z-0 transition-transform duration-500 group-hover:scale-125">
+                            <source src="images/lab_video.mp4" type="video/mp4">
+                        </video>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                        <div class="relative z-10 text-white transition-transform duration-500 ease-in-out [transform-style:preserve-3d] group-hover:[transform:translateZ(40px)]">
+                            <div class="inline-flex items-center justify-center h-14 w-14 rounded-full bg-brand-gold/90 mb-4 border-2 border-white/70 transition-transform duration-500 [transform:translateZ(10px)] overflow-hidden">
+                                <img src="images/labs.jpeg" alt="WeCare Labs Logo" class="h-full w-full object-cover">
+                            </div>
+                            <h3 class="text-3xl font-bold mb-2 drop-shadow-md transition-transform duration-500 [transform:translateZ(20px)]">WeCare Labs</h3>
+                            <p class="text-gray-200 drop-shadow-sm transition-transform duration-500 [transform:translateZ(15px)]">
+                                State-of-the-art diagnostics with rapid, reliable results. Our accredited medical laboratory provides accurate health insights.
+                            </p>
+                        </div>
+                    </a>
+
+                    <!-- WeCare Dent Card -->
+                    <a href="#dent" id="dent" class="group relative min-h-[450px] flex flex-col justify-end p-8 rounded-2xl shadow-xl overflow-hidden bg-cover bg-center transition-all duration-500 ease-in-out [transform-style:preserve-3d] hover:shadow-2xl hover:[transform:rotateY(-15deg)]">
+                        <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-125" style="background-image: url('images/dent.jpeg');"></div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                        <div class="relative z-10 text-white transition-transform duration-500 ease-in-out [transform-style:preserve-3d] group-hover:[transform:translateZ(40px)]">
+                            <div class="inline-flex items-center justify-center h-14 w-14 rounded-full bg-brand-blue/90 mb-4 border-2 border-white/70 transition-transform duration-500 [transform:translateZ(10px)]">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4" />
+                                </svg>
+                            </div>
+                            <h3 class="text-3xl font-bold mb-2 drop-shadow-md transition-transform duration-500 [transform:translateZ(20px)]">WeCare Dent</h3>
+                            <p class="text-gray-200 drop-shadow-sm transition-transform duration-500 [transform:translateZ(15px)]">
+                                Comprehensive dental care for a brighter, healthier smile. We offer personalized, gentle care for the whole family.
+                            </p>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us -->
+        <section id="why-us" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Why Choose WeCare?</h2>
+                <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">We are committed to excellence in every aspect of our service.</p>
+                <div class="mt-16 grid md:grid-cols-3 gap-10">
+                    <div class="p-8 bg-white rounded-xl shadow-lg transform hover:-translate-y-2 transition-transform duration-300">
+                        <div class="flex items-center justify-center h-20 w-20 mx-auto rounded-full bg-brand-teal/10 mb-5">
+                           <svg class="h-10 w-10 text-brand-teal" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 00-4.132 0M9.75 3.104c-1.664 0-3.223.42-4.523 1.154M5.023 8.25c.673 2.047-.673 4.453 0 6.5M18.977 8.25c-.673 2.047.673 4.453 0 6.5m-13.954-6.5c.673-2.047 2.56-3.514 4.727-3.514 2.167 0 4.062 1.467 4.727 3.514M12 14.25v5.25m-4.5-5.25v5.25m9-5.25v5.25M9.75 14.25h4.5M3.75 14.25h16.5" />
+                            </svg>
+                        </div>
+                        <h4 class="text-xl font-bold text-gray-800">Advanced Technology</h4>
+                        <p class="mt-2 text-gray-600">We use the latest equipment for accurate results and comfortable treatments.</p>
+                    </div>
+                    <div class="p-8 bg-white rounded-xl shadow-lg transform hover:-translate-y-2 transition-transform duration-300">
+                        <div class="flex items-center justify-center h-20 w-20 mx-auto rounded-full bg-brand-teal/10 mb-5">
+                            <svg class="h-10 w-10 text-brand-teal" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.286zm0 13.036h.008v.008h-.008v-.008z" />
+                            </svg>
+                        </div>
+                        <h4 class="text-xl font-bold text-gray-800">Expert Team</h4>
+                        <p class="mt-2 text-gray-600">Our certified professionals are dedicated to providing expert care and advice.</p>
+                    </div>
+                    <div class="p-8 bg-white rounded-xl shadow-lg transform hover:-translate-y-2 transition-transform duration-300">
+                        <div class="flex items-center justify-center h-20 w-20 mx-auto rounded-full bg-brand-teal/10 mb-5">
+                            <svg class="h-10 w-10 text-brand-teal" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 13.5v-3m-1.5 1.5h3" />
+                            </svg>
+                        </div>
+                        <h4 class="text-xl font-bold text-gray-800">Patient-Centric Care</h4>
+                        <p class="mt-2 text-gray-600">Your comfort and well-being are at the heart of everything we do.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact/Footer -->
+        <footer id="contact" class="bg-gray-800 text-white">
+            <div class="container mx-auto px-6 py-16 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold">Ready to Take the Next Step?</h2>
+                <p class="mt-4 text-lg text-gray-300 max-w-2xl mx-auto">Book an appointment today and experience the WeCare difference.</p>
+                <a href="#" class="mt-10 inline-block bg-gradient-to-r from-brand-teal to-teal-600 text-white text-lg px-10 py-4 rounded-xl shadow-lg hover:shadow-xl hover:scale-105 transition-all transform">
+                    Book an Appointment
+                </a>
+                <div class="mt-16 border-t border-gray-700 pt-10">
+                    <div class="grid md:grid-cols-3 gap-8">
+                        <div class="text-gray-400">
+                            <h5 class="font-bold text-white mb-2">Address</h5>
+                            <p>123 Health St, Wellness City, 45678</p>
+                        </div>
+                        <div class="text-gray-400">
+                            <h5 class="font-bold text-white mb-2">Contact</h5>
+                            <p>Email: contact@wecare.demo</p>
+                            <p>Phone: (123) 456-7890</p>
+                        </div>
+                        <div class="text-gray-400">
+                            <h5 class="font-bold text-white mb-2">Follow Us</h5>
+                            <div class="flex justify-center space-x-4">
+                                <a href="#" class="hover:text-brand-teal transition-colors">Twitter</a>
+                                <a href="#" class="hover:text-brand-teal transition-colors">Facebook</a>
+                                <a href="#" class="hover:text-brand-teal transition-colors">LinkedIn</a>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="mt-10 text-gray-500 text-sm">&copy; 2025 WeCare. All Rights Reserved. Demo for development purposes.</p>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script>
+        const headerContainer = document.getElementById('header-container');
+        const logo = document.getElementById('logo');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                headerContainer.classList.remove('py-2');
+                headerContainer.classList.add('py-1');
+                logo.classList.remove('h-28');
+                logo.classList.add('h-16');
+            } else {
+                headerContainer.classList.remove('py-1');
+                headerContainer.classList.add('py-2');
+                logo.classList.remove('h-16');
+                logo.classList.add('h-28');
+            }
+        });
+    </script>
+</body>
+</html>
