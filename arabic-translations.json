@@ -1,0 +1,246 @@
+{
+  "navigation": {
+    "services": "الخدمات",
+    "laboratory": "المختبر",
+    "dental_care": "طب الأسنان",
+    "our_team": "فريقنا",
+    "reviews": "التقييمات",
+    "contact": "اتصل بنا",
+    "book_appointment": "احجز موعد"
+  },
+  "hero_section": {
+    "title_line1": "صحتك،",
+    "title_line2": "أولويتنا",
+    "subtitle": "في WeCare نقدّم منظومة طبية متكاملة تجمع بين الخبرة، التقنية، وتنوع الخدمات تحت مظلة واحدة: مثل خدمات التحاليل الطبية، وعيادات الأسنان، وعيادات الجراحة، إلى جانب مجموعة متنامية من التخصصات والخدمات التي ستنضم قريبًا إلى شبكتنا.",
+    "same_day_results": "نتائج في نفس اليوم",
+    "expert_care": "رعاية متخصصة",
+    "wellness_journey": "والتزام برحلة عافيتك",
+    "benefits": {
+      "same_day_lab": "نتائج المختبر في نفس اليوم",
+      "advanced_dental": "رعاية أسنان متقدمة",
+      "insurance_accepted": "نقبل التأمين"
+    },
+    "cta": {
+      "schedule_appointment": "حدد موعد",
+      "view_services": "عرض الخدمات"
+    }
+  },
+  "services_section": {
+    "title": "خدمات الرعاية الصحية الشاملة",
+    "subtitle": "من التشخيص المختبري المتقدم إلى رعاية الأسنان الكاملة، نوفر حلول الرعاية الصحية المتكاملة تحت سقف واحد.",
+    "wecare_labs": {
+      "title": "مختبرات WeCare",
+      "subtitle": "مختبر معتمد CLIA",
+      "description": "مختبرنا الطبي المتطور يقدم نتائج تشخيصية سريعة ودقيقة باستخدام أحدث التقنيات.",
+      "services": {
+        "blood_chemistry": "كيمياء الدم",
+        "blood_chemistry_desc": "فحوصات الأيض الشاملة وملف الدهون",
+        "hormone_testing": "فحص الهرمونات",
+        "hormone_testing_desc": "هرمونات الغدة الدرقية والتناسلية والتوتر",
+        "cardiac_markers": "علامات القلب",
+        "cardiac_markers_desc": "صحة القلب وتقييم المخاطر",
+        "infectious_disease": "الأمراض المعدية",
+        "infectious_disease_desc": "فحوصات كوفيد-19 والأمراض المنقولة جنسياً والمسببات المرضية"
+      },
+      "cta": "عرض خدمات المختبر",
+      "hours": "الاثنين-الجمعة 7 صباحاً-6 مساءً، السبت 8 صباحاً-2 ظهراً"
+    },
+    "wecare_dental": {
+      "title": "طب أسنان WeCare",
+      "subtitle": "عضو في جمعية طب الأسنان الأمريكية",
+      "description": "اختبر رعاية الأسنان الشاملة في بيئة مريحة وحديثة. فريق طب الأسنان المهرة لدينا يوفر كل شيء من الرعاية الوقائية إلى العلاجات التجميلية والترميمية المتقدمة، كل ذلك بنهج لطيف يركز على المريض.",
+      "services": {
+        "preventive_care": "الرعاية الوقائية",
+        "preventive_care_desc": "تنظيف منتظم وفحوصات وعلاجات الفلورايد للحفاظ على صحة الفم المثلى",
+        "cosmetic_dentistry": "طب الأسنان التجميلي",
+        "cosmetic_dentistry_desc": "تبييض الأسنان والقشور وتجميل الابتسامة لتعزيز الثقة"
+      },
+      "cta": "عرض خدمات طب الأسنان",
+      "hours": "الاثنين-الخميس 8 صباحاً-6 مساءً، الجمعة 8 صباحاً-4 مساءً"
+    }
+  },
+  "why_choose_section": {
+    "title": "لماذا تختار WeCare؟",
+    "subtitle": "نحن ملتزمون بالتميز في كل جانب من جوانب خدمتنا، نجمع بين التكنولوجيا المتقدمة والرعاية الرحيمة.",
+    "features": {
+      "advanced_technology": {
+        "title": "تكنولوجيا متقدمة",
+        "subtitle": "أحدث المعدات المعتمدة من إدارة الغذاء والدواء",
+        "description": "معدات حديثة تشمل الأشعة السينية الرقمية والمحللات الآلية والتشخيص بمساعدة الذكاء الاصطناعي",
+        "features_list": {
+          "digital_xrays": "الأشعة السينية الرقمية",
+          "ai_diagnostics": "التشخيص بالذكاء الاصطناعي",
+          "automated_analyzers": "المحللات الآلية",
+          "realtime_results": "النتائج في الوقت الفعلي"
+        },
+        "stats": {
+          "accuracy_rate": "معدل الدقة",
+          "average_results": "متوسط النتائج",
+          "emergency_care": "الرعاية الطارئة",
+          "years_experience": "سنوات الخبرة"
+        }
+      },
+      "expert_team": {
+        "title": "فريق خبراء",
+        "description": "أطباء معتمدون ومهنيو طب أسنان مرخصون وفنيو مختبرات معتمدون",
+        "stat": "15+ سنة خبرة مجتمعة"
+      },
+      "patient_centric_care": {
+        "title": "رعاية تركز على المريض",
+        "description": "راحتك ورفاهيتك في قلب كل ما نقوم به. نأخذ الوقت للاستماع وشرح الإجراءات والتأكد من شعورك بالثقة في رعايتك.",
+        "satisfaction_rate": "معدل رضا المرضى 98%"
+      }
+    },
+    "stats": {
+      "patients_served": "مريض تم خدمته",
+      "years_experience": "سنوات الخبرة",
+      "satisfaction_rate": "معدل الرضا",
+      "emergency_availability": "24/7"
+    }
+  },
+  "team_section": {
+    "title": "تعرف على فريقنا",
+    "subtitle": "مهنيون ذوو خبرة مكرسون لتقديم رعاية استثنائية",
+    "dr_sarah_mitchell": {
+      "name": "د. سارة ميتشل",
+      "title": "كبيرة الأطباء وطبيبة الأسرة",
+      "description": "طبيبة أسرة معتمدة مع أكثر من 15 عاماً من الخبرة في الطب الوقائي والرعاية الشاملة.",
+      "credentials": ["دكتوراه في الطب", "طب الأسرة", "15 سنة"],
+      "specialties": ["الطب الوقائي", "إدارة الأمراض المزمنة", "رعاية الأسرة"]
+    },
+    "dr_michael_chen": {
+      "name": "د. مايكل تشين",
+      "title": "طبيب أسنان رئيسي",
+      "description": "طبيب أسنان عام ماهر متخصص في طب الأسنان التجميلي والترميمي مع التركيز على رعاية المرضى الرحيمة.",
+      "credentials": ["دكتوراه في طب الأسنان", "عضو جمعية طب الأسنان الأمريكية", "12 سنة"]
+    },
+    "lisa_rodriguez": {
+      "name": "ليزا رودريغيز",
+      "title": "مديرة المختبر",
+      "description": "تقنية طبية معتمدة مع 12 عاماً من الخبرة في الكيمياء السريرية وضمان الجودة.",
+      "credentials": ["MT(ASCP)", "CLS", "خبيرة الجودة"],
+      "quality_score": "نقاط الجودة"
+    }
+  },
+  "testimonials_section": {
+    "title": "ما يقوله مرضانا",
+    "subtitle": "اقرأ عن تجارب مرضانا الحقيقية مع خدماتنا",
+    "testimonials": {
+      "emily_johnson": {
+        "name": "إيميلي جونسون",
+        "location": "دالاس، تكساس",
+        "text": "WeCare غيّر تجربتي في الرعاية الصحية. النتائج السريعة والموظفون الودودون جعلوا كل زيارة سلسة. أوصي بهم بشدة!",
+        "rating": "5 نجوم",
+        "service": "خدمات المختبر"
+      },
+      "david_martinez": {
+        "name": "ديفيد مارتينيز",
+        "location": "أوستن، تكساس",
+        "text": "د. تشين وفريقه رائعون! حصلت على أفضل رعاية أسنان في حياتي. العيادة حديثة والخدمة من الدرجة الأولى.",
+        "rating": "5 نجوم",
+        "service": "طب الأسنان"
+      },
+      "maria_garcia": {
+        "name": "ماريا غارسيا",
+        "location": "هيوستن، تكساس",
+        "text": "أقدر النهج الشامل في WeCare. وجود المختبر وطب الأسنان في مكان واحد يوفر الكثير من الوقت. الموظفون محترفون ومهتمون.",
+        "rating": "5 نجوم",
+        "service": "خدمات شاملة"
+      }
+    }
+  },
+  "appointment_section": {
+    "title": "احجز موعدك",
+    "subtitle": "جاهز لتجربة الفرق WeCare؟ حدد موعدك اليوم وابدأ رحلتك نحو صحة أفضل.",
+    "form": {
+      "first_name": "الاسم الأول",
+      "first_name_placeholder": "أحمد",
+      "last_name": "اسم العائلة",
+      "last_name_placeholder": "محمد",
+      "email": "البريد الإلكتروني",
+      "email_placeholder": "ahmed@example.com",
+      "phone": "رقم الهاتف",
+      "phone_placeholder": "(555) 123-4567",
+      "service_type": "نوع الخدمة",
+      "service_options": {
+        "laboratory": "خدمات المختبر",
+        "dental": "طب الأسنان",
+        "both": "كلاهما",
+        "consultation": "استشارة"
+      },
+      "preferred_date": "التاريخ المفضل",
+      "preferred_time": "الوقت المفضل",
+      "time_options": {
+        "morning": "صباحاً (8 ص - 12 ظ)",
+        "afternoon": "بعد الظهر (12 ظ - 5 م)",
+        "evening": "مساءً (5 م - 8 م)"
+      },
+      "additional_notes": "ملاحظات إضافية",
+      "notes_placeholder": "أي طلبات خاصة أو معلومات إضافية...",
+      "submit_button": "حدد موعد",
+      "required_field": "مطلوب"
+    },
+    "contact_info": {
+      "call_us": "اتصل بنا",
+      "visit_us": "زرنا",
+      "address": "2847 Medical Center Drive, Suite 100",
+      "city": "دالاس، تكساس 75234",
+      "hours": {
+        "title": "ساعات العمل",
+        "weekdays": "الاثنين - الجمعة: 7:00 ص - 6:00 م",
+        "saturday": "السبت: 8:00 ص - 2:00 م",
+        "sunday": "الأحد: مغلق"
+      },
+      "emergency": "للطوارئ: متاح 24/7"
+    }
+  },
+  "footer": {
+    "tagline": "شريكك الموثوق في الصحة والعافية",
+    "description": "WeCare Health & Dental ملتزم بتقديم خدمات الرعاية الصحية الاستثنائية مع التركيز على راحة المريض والتميز السريري.",
+    "quick_links": {
+      "title": "روابط سريعة",
+      "services": "خدماتنا",
+      "laboratory": "المختبر",
+      "dental": "طب الأسنان",
+      "team": "فريقنا",
+      "testimonials": "التقييمات",
+      "contact": "اتصل بنا"
+    },
+    "services_footer": {
+      "title": "الخدمات",
+      "blood_work": "فحوصات الدم",
+      "hormone_testing": "فحص الهرمونات",
+      "dental_cleaning": "تنظيف الأسنان",
+      "cosmetic_dentistry": "طب الأسنان التجميلي",
+      "emergency_care": "الرعاية الطارئة"
+    },
+    "contact_footer": {
+      "title": "معلومات الاتصال",
+      "address": "2847 Medical Center Drive, Suite 100",
+      "city": "دالاس، تكساس 75234",
+      "phone": "(555) 123-4567",
+      "email": "info@wecare-health.com",
+      "hours": "الاثنين-الجمعة: 7 ص-6 م"
+    },
+    "social_media": {
+      "title": "تابعنا",
+      "facebook": "فيسبوك",
+      "twitter": "تويتر",
+      "instagram": "إنستغرام",
+      "linkedin": "لينكد إن"
+    },
+    "copyright": "© 2024 WeCare Health & Dental. جميع الحقوق محفوظة.",
+    "demo_notice": "عرض توضيحي لأغراض التطوير",
+    "privacy_policy": "سياسة الخصوصية",
+    "terms_of_service": "شروط الخدمة"
+  },
+  "trust_badges": {
+    "clia_certified": "مختبر معتمد CLIA",
+    "ada_member": "عضو جمعية طب الأسنان الأمريكية",
+    "advanced_lab_tech": "تقنية مختبرية متقدمة",
+    "years_experience": "سنوات خبرة",
+    "patients_served": "مريض تم خدمته",
+    "satisfaction_rate": "معدل الرضا",
+    "emergency_available": "متاح 24/7"
+  }
+}

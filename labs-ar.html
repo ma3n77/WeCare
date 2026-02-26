@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>معامل وي كير - فحوصات مخبرية طبية متقدمة</title>
+    <meta name="description"
+        content="فحوصات مخبرية طبية متطورة مع نتائج في نفس اليوم. مرفق معتمد يقدم خدمات تشخيصية شاملة.">
+    <link rel="preconnect" href="https://rsms.me/">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&family=Tajawal:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="dist/output.css">
+</head>
+
+<body class="bg-brand-light font-sans antialiased">
+
+    <!-- Header -->
+    <header id="navbar"
+        class="bg-white/70 backdrop-blur-md sticky top-0 z-50 shadow-sm border-b border-gray-100/50 transition-all duration-300">
+        <div class="container mx-auto px-6 py-2 transition-all duration-300">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <a href="index-ar.html">
+                        <img id="navbar-logo" src="./images/llc.png" alt="وي كير الصحة وطب الأسنان"
+                            class="h-28 w-auto hover:scale-105 transition-all duration-300 drop-shadow-lg">
+                    </a>
+                </div>
+
+                <nav class="hidden lg:flex items-center space-x-8 space-x-reverse">
+                    <a href="index-ar.html"
+                        class="text-gray-700 hover:text-brand-teal transition-colors font-medium">الرئيسية</a>
+                    <a href="labs-ar.html" class="text-brand-teal font-semibold transition-colors">المختبر</a>
+                    <a href="dental-ar.html"
+                        class="text-gray-700 hover:text-brand-teal transition-colors font-medium">طب الأسنان</a>
+                    <a href="about-ar.html" class="text-gray-700 hover:text-brand-teal transition-colors font-medium">من
+                        نحن</a>
+                    <a href="contact-ar.html"
+                        class="text-gray-700 hover:text-brand-teal transition-colors font-medium">اتصل بنا</a>
+                </nav>
+
+                <div class="hidden md:flex items-center space-x-3 space-x-reverse">
+                    <div class="flex items-center space-x-2 space-x-reverse ml-4">
+                        <a href="labs.html"
+                            class="px-3 py-1 rounded-full text-sm font-medium text-brand-teal border border-brand-teal hover:bg-brand-teal hover:text-white transition-all">EN</a>
+                        <a href="labs-ar.html"
+                            class="px-3 py-1 rounded-full text-sm font-medium bg-brand-teal text-white">العربية</a>
+                    </div>
+
+                    <a href="tel:+15551234567"
+                        class="text-brand-teal hover:text-brand-navy transition-colors font-semibold">
+                        (555) 123-4567
+                    </a>
+                    <a href="contact-ar.html"
+                        class="bg-brand-teal text-white px-6 py-2.5 rounded-full hover:bg-brand-navy transition-all shadow-lg hover:shadow-xl transform hover:scale-105">
+                        احجز موعد
+                    </a>
+                </div>
+
+                <button class="lg:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors" id="mobile-menu-btn">
+                    <svg class="h-6 w-6 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+
+            <div class="lg:hidden hidden mt-2 pb-2 border-t border-gray-100/50" id="mobile-menu">
+                <nav class="flex flex-col space-y-2 pt-2">
+                    <a href="index-ar.html"
+                        class="text-gray-700 hover:text-brand-teal transition-colors font-medium py-2">الرئيسية</a>
+                    <a href="labs-ar.html" class="text-brand-teal font-semibold transition-colors py-2">المختبر</a>
+                    <a href="dental-ar.html"
+                        class="text-gray-700 hover:text-brand-teal transition-colors font-medium py-2">طب الأسنان</a>
+                    <a href="about-ar.html"
+                        class="text-gray-700 hover:text-brand-teal transition-colors font-medium py-2">من نحن</a>
+                    <a href="contact-ar.html"
+                        class="text-gray-700 hover:text-brand-teal transition-colors font-medium py-2">اتصل بنا</a>
+                    <div class="pt-3 border-t border-gray-100">
+                        <div class="flex items-center space-x-2 space-x-reverse mb-3">
+                            <a href="labs.html"
+                                class="px-3 py-1 rounded-full text-sm font-medium text-brand-teal border border-brand-teal">EN</a>
+                            <a href="labs-ar.html"
+                                class="px-3 py-1 rounded-full text-sm font-medium bg-brand-teal text-white">العربية</a>
+                        </div>
+                        <a href="tel:+15551234567"
+                            class="block text-brand-teal hover:text-brand-navy transition-colors font-semibold py-2">
+                            (555) 123-4567
+                        </a>
+                        <a href="contact-ar.html"
+                            class="block bg-brand-teal text-white px-6 py-2.5 rounded-full hover:bg-brand-navy transition-all text-center mt-2">
+                            احجز موعد
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="relative overflow-hidden bg-gradient-to-br from-brand-teal/10 via-white to-brand-blue/5 py-20">
+            <div class="container mx-auto px-6">
+                <div class="max-w-4xl mx-auto text-center">
+                    <div class="inline-flex items-center bg-brand-teal/10 rounded-full px-4 py-2 mb-6">
+                        <span class="text-sm font-semibold text-brand-teal">🔬 مختبر معتمد</span>
+                    </div>
+                    <h1 class="text-5xl md:text-6xl font-bold text-brand-navy mb-6 font-display">
+                        <span class="text-brand-teal">معامل</span> وي كير الطبية
+                    </h1>
+                    <p class="text-xl text-gray-600 leading-relaxed mb-8">
+                        تقدم معاملنا نتائج سريعة ودقيقة وتشخيصية؛ اعتمادًا على أحدث التقنيات التكنولوجية. بدايةً من
+                        تحاليل الدم الروتينية وحتى التحاليل المتخصصة ... نقدم خدمات معملية متكاملة، تجعل استلام النتائج
+                        في نفس اليوم هو القاعدة لدينا في معظم التحاليل.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a href="contact-ar.html"
+                            class="bg-brand-teal text-white px-8 py-4 rounded-xl font-semibold shadow-lg hover:shadow-xl hover:bg-brand-navy transition-all transform hover:scale-105">
+                            احجز فحص مخبري
+                        </a>
+                        <a href="#services"
+                            class="border-2 border-brand-teal text-brand-teal px-8 py-4 rounded-xl font-semibold hover:bg-brand-teal hover:text-white transition-all">
+                            عرض الخدمات
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lab Services Section -->
+        <style>
+            .lab-card {
+                transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+            }
+
+            .lab-card:hover {
+                transform: translateY(-6px);
+            }
+
+            .lab-card .card-icon {
+                transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+            }
+
+            .lab-card:hover .card-icon {
+                transform: scale(1.1);
+            }
+
+            .lab-card-reveal {
+                opacity: 0;
+                transform: translateY(28px);
+                transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1), transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+            }
+
+            .lab-card-reveal.revealed {
+                opacity: 1;
+                transform: translateY(0);
+            }
+
+            .check-item {
+                display: flex;
+                align-items: flex-start;
+                gap: 8px;
+            }
+
+            .check-item svg {
+                flex-shrink: 0;
+                margin-top: 2px;
+            }
+        </style>
+        <section id="services" class="py-24 bg-gradient-to-b from-white to-gray-50/80">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <p class="text-sm font-semibold tracking-widest uppercase text-brand-teal mb-3">أقسامنا</p>
+                    <h2 class="text-4xl md:text-5xl font-bold text-brand-navy mb-5 font-display">
+                        خدمات المختبر الطبي
+                    </h2>
+                    <p class="text-lg text-gray-500 max-w-2xl mx-auto leading-relaxed">
+                        فحوصات تشخيصية شاملة بتقنيات متقدمة وتحليل متخصص
+                    </p>
+                </div>
+
+                <!-- Services Grid -->
+                <div class="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+
+                    <!-- Clinical Chemistry -->
+                    <div
+                        class="lab-card lab-card-reveal bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl overflow-hidden">
+                        <div class="h-1 bg-gradient-to-r from-brand-teal to-emerald-400"></div>
+                        <div class="p-7">
+                            <div class="flex items-start gap-4 mb-5">
+                                <div
+                                    class="card-icon w-14 h-14 bg-brand-teal/8 rounded-xl flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-7 h-7 text-brand-teal" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714a2.25 2.25 0 00.659 1.591L19 14.5M14.25 3.104c.251.023.501.05.75.082M19 14.5l-1.299 4.887a1.5 1.5 0 01-1.451 1.113H7.75a1.5 1.5 0 01-1.451-1.113L5 14.5m14 0H5" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-bold text-brand-navy">كيمياء الدم</h3>
+                                    <p class="text-sm text-gray-400 mt-0.5">تحاليل الدم والأيض</p>
+                                </div>
+                            </div>
+                            <ul class="space-y-3 text-sm text-gray-600">
+                                <li class="check-item">
+                                    <svg class="w-4 h-4 text-brand-teal" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    <span>لوحة الأيض الشاملة (CMP)</span>
+                                </li>
+                                <li class="check-item">
+                                    <svg class="w-4 h-4 text-brand-teal" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    <span>تحاليل الدهون والكوليسترول</span>
+                                </li>
+                                <li class="check-item">
+                                    <svg class="w-4 h-4 text-brand-teal" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    <span>وظائف الكبد والكلى</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Hormonal Tests -->
+                    <div
+                        class="lab-card lab-card-reveal bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl overflow-hidden">
+                        <div class="h-1 bg-gradient-to-r from-brand-blue to-sky-400"></div>
+                        <div class="p-7">
+                            <div class="flex items-start gap-4 mb-5">
+                                <div
+                                    class="card-icon w-14 h-14 bg-brand-blue/8 rounded-xl flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-7 h-7 text-brand-blue" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0118 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1 3m8.5-3l1 3m0 0l.5 1.5m-.5-1.5h-9.5m0 0l-.5 1.5m.75-9l3-3 2.148 2.148A12.061 12.061 0 0116.5 7.605" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-bold text-brand-navy">التحاليل الهرمونية</h3>
+                                    <p class="text-sm text-gray-400 mt-0.5">تحليل الجهاز الهرموني</p>
+                                </div>
+                            </div>
+                            <ul class="space-y-3 text-sm text-gray-600">
+                                <li class="check-item">
+                                    <svg class="w-4 h-4 text-brand-blue" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    <span>هرمونات الغدة الدرقية (TSH, T3, T4)</span>
+                                </li>
+                                <li class="check-item">
+                                    <svg class="w-4 h-4 text-brand-blue" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    <span>الهرمونات التناسلية</span>
+                                </li>
+                                <li class="check-item">
+                                    <svg class="w-4 h-4 text-brand-blue" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    <span>الكورتيزول وهرمونات الإجهاد</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Cardiac Markers -->
+                    <div
+                        class="lab-card lab-card-reveal bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl overflow-hidden">
+                        <div class="h-1 bg-gradient-to-r from-rose-500 to-brand-gold"></div>
+                        <div class="p-7">
+                            <div class="flex items-start gap-4 mb-5">
+                                <div
+                                    class="card-icon w-14 h-14 bg-rose-500/8 rounded-xl flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-7 h-7 text-rose-500" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-bold text-brand-navy">المؤشرات القلبية</h3>
+                                    <p class="text-sm text-gray-400 mt-0.5">تقييم صحة القلب والأوعية</p>
+                                </div>
+                            </div>
+                            <ul class="space-y-3 text-sm text-gray-600">
+                                <li class="check-item">
+                                    <svg class="w-4 h-4 text-rose-500" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    <span>تقييم صحة القلب</span>
+                                </li>
+                                <li class="check-item">
+                                    <svg class="w-4 h-4 text-rose-500" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    <span>قياس إنزيمات القلب</span>
+                                </li>
+                                <li class="check-item">
+                                    <svg class="w-4 h-4 text-rose-500" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    <span>تقدير مخاطر أمراض القلب</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Infectious Disease Testing -->
+                    <div
+                        class="lab-card lab-card-reveal bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl overflow-hidden">
+                        <div class="h-1 bg-gradient-to-r from-amber-500 to-brand-gold"></div>
+                        <div class="p-7">
+                            <div class="flex items-start gap-4 mb-5">
+                                <div
+                                    class="card-icon w-14 h-14 bg-amber-500/8 rounded-xl flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-7 h-7 text-amber-600" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-bold text-brand-navy">تحاليل الأمراض المُعدية</h3>
+                                    <p class="text-sm text-gray-400 mt-0.5">كشف ومسح مسببات الأمراض</p>
+                                </div>
+                            </div>
+                            <ul class="space-y-3 text-sm text-gray-600">
+                                <li class="check-item">
+                                    <svg class="w-4 h-4 text-amber-600" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    <span>فيروس كورونا (COVID-19)</span>
+                                </li>
+                                <li class="check-item">
+                                    <svg class="w-4 h-4 text-amber-600" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    <span>الأمراض المنقولة جنسيًا</span>
+                                </li>
+                                <li class="check-item">
+                                    <svg class="w-4 h-4 text-amber-600" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    <span>تحاليل الميكروبات المختلفة</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Same-Day Results Badge -->
+                <div class="mt-14 text-center">
+                    <div
+                        class="inline-flex items-center bg-white border border-brand-teal/20 rounded-full px-6 py-3 shadow-sm">
+                        <svg class="w-5 h-5 text-brand-teal ml-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd"
+                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        <span class="text-brand-teal font-semibold text-sm">نتائج في نفس اليوم لمعظم التحاليل</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Location Section -->
+        <section class="py-20 bg-brand-light">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl md:text-5xl font-bold text-brand-navy mb-4 font-display">
+                        زُر معملنا
+                    </h2>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                        تجدنا في موقعنا المريح بالإسكندرية
+                    </p>
+                </div>
+
+                <div class="max-w-5xl mx-auto">
+                    <div class="rounded-2xl overflow-hidden shadow-2xl">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13457.14438210152!2d29.901604157451967!3d31.207484080876025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c5e9a36ca275%3A0x88655144f1d020a6!2sWeCare%20Labs!5e0!3m2!1sen!2seg!4v1770337253185!5m2!1sen!2seg"
+                            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-20 bg-gradient-to-br from-brand-teal to-brand-navy text-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-4xl font-bold mb-6 font-display">هل أنت مستعد لحجز فحصك المخبري؟</h2>
+                <p class="text-xl text-gray-100 mb-8 max-w-2xl mx-auto">
+                    نتائج سريعة ودقيقة مع جدولة مريحة وخدمة في نفس اليوم
+                </p>
+                <a href="contact-ar.html"
+                    class="inline-block bg-white text-brand-navy px-8 py-4 rounded-xl font-bold text-lg shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all">
+                    احجز موعدك
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-brand-navy text-white">
+        <div class="container mx-auto px-6 py-16">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="md:col-span-2">
+                    <div class="flex items-center space-x-3 space-x-reverse mb-4">
+                        <img src="images/llc.png" alt="وي كير الصحة وطب الأسنان" class="h-12 w-auto">
+                        <div>
+                            <h3 class="text-2xl font-bold font-display">وي كير</h3>
+                            <p class="text-gray-300 text-sm">الصحة وطب الأسنان</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 leading-relaxed mb-6 max-w-md">
+                        نقدم خدمات رعاية صحية متكاملة مع فحوصات مخبرية طبية متطورة ورعاية أسنان شاملة. صحتك هي أولويتنا.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-lg mb-4">روابط سريعة</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="index-ar.html" class="hover:text-brand-teal transition-colors">الرئيسية</a></li>
+                        <li><a href="labs-ar.html" class="hover:text-brand-teal transition-colors">الفحوصات المخبرية</a>
+                        </li>
+                        <li><a href="dental-ar.html" class="hover:text-brand-teal transition-colors">طب الأسنان</a></li>
+                        <li><a href="about-ar.html" class="hover:text-brand-teal transition-colors">من نحن</a></li>
+                        <li><a href="contact-ar.html" class="hover:text-brand-teal transition-colors">اتصل بنا</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-lg mb-4">الخدمات</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="labs-ar.html" class="hover:text-brand-teal transition-colors">كيمياء الدم</a></li>
+                        <li><a href="labs-ar.html" class="hover:text-brand-teal transition-colors">فحص الهرمونات</a>
+                        </li>
+                        <li><a href="dental-ar.html" class="hover:text-brand-teal transition-colors">طب الأسنان
+                                الوقائي</a></li>
+                        <li><a href="dental-ar.html" class="hover:text-brand-teal transition-colors">طب الأسنان
+                                التجميلي</a></li>
+                        <li><a href="contact-ar.html" class="hover:text-brand-teal transition-colors">الرعاية
+                                الطارئة</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm">
+                    &copy; 2025 وي كير الصحة وطب الأسنان. جميع الحقوق محفوظة.
+                </p>
+                <div class="flex space-x-6 space-x-reverse mt-4 md:mt-0 text-sm text-gray-400">
+                    <a href="#" class="hover:text-brand-teal transition-colors">سياسة الخصوصية</a>
+                    <a href="#" class="hover:text-brand-teal transition-colors">شروط الخدمة</a>
+                    <a href="#" class="hover:text-brand-teal transition-colors">الامتثال لقانون HIPAA</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            if (mobileMenuBtn && mobileMenu) {
+                mobileMenuBtn.addEventListener('click', function () {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = mobileMenuBtn.querySelector('svg');
+                    if (mobileMenu.classList.contains('hidden')) {
+                        icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />';
+                    } else {
+                        icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />';
+                    }
+                });
+
+                const mobileLinks = mobileMenu.querySelectorAll('a');
+                mobileLinks.forEach(link => {
+                    link.addEventListener('click', function () {
+                        mobileMenu.classList.add('hidden');
+                        const icon = mobileMenuBtn.querySelector('svg');
+                        icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />';
+                    });
+                });
+            }
+        });
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        window.addEventListener('scroll', function () {
+            const navbar = document.getElementById('navbar');
+            const logo = document.getElementById('navbar-logo');
+
+            if (window.scrollY > 50) {
+                navbar.classList.add('shadow-md', 'bg-white/80');
+                navbar.classList.remove('shadow-sm', 'bg-white/70');
+                logo.classList.add('h-20');
+                logo.classList.remove('h-28');
+            } else {
+                navbar.classList.remove('shadow-md', 'bg-white/80');
+                navbar.classList.add('shadow-sm', 'bg-white/70');
+                logo.classList.remove('h-20');
+                logo.classList.add('h-28');
+            }
+        });
+
+        // Staggered card reveal on scroll
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach((entry, i) => {
+                if (entry.isIntersecting) {
+                    const cards = document.querySelectorAll('.lab-card-reveal');
+                    cards.forEach((card, index) => {
+                        setTimeout(() => {
+                            card.classList.add('revealed');
+                        }, index * 120);
+                    });
+                    revealObserver.disconnect();
+                }
+            });
+        }, { threshold: 0.15 });
+
+        const firstCard = document.querySelector('.lab-card-reveal');
+        if (firstCard) revealObserver.observe(firstCard);
+    </script>
+
+</body>
+
+</html>

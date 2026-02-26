@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeCare Labs - Advanced Medical Laboratory Testing</title>
+    <meta name="description"
+        content="State-of-the-art medical laboratory testing with same-day results. CLIA certified facility offering comprehensive diagnostic services.">
+    <link rel="preconnect" href="https://rsms.me/">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="dist/output.css">
+</head>
+
+<body class="bg-brand-light font-sans antialiased">
+
+    <!-- Header -->
+    <header id="navbar"
+        class="bg-white/70 backdrop-blur-md sticky top-0 z-50 shadow-sm border-b border-gray-100/50 transition-all duration-300">
+        <div class="container mx-auto px-6 py-2 transition-all duration-300">
+            <div class="flex justify-between items-center">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <a href="index.html">
+                        <img id="navbar-logo" src="./images/llc.png" alt="WeCare Health & Dental"
+                            class="h-28 w-auto hover:scale-105 transition-all duration-300 drop-shadow-lg">
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden lg:flex items-center space-x-8">
+                    <a href="index.html"
+                        class="text-gray-700 hover:text-brand-teal transition-colors font-medium">Home</a>
+                    <a href="labs.html" class="text-brand-teal font-semibold transition-colors">Laboratory</a>
+                    <a href="dental.html"
+                        class="text-gray-700 hover:text-brand-teal transition-colors font-medium">Dental
+                        Care</a>
+                    <a href="about.html" class="text-gray-700 hover:text-brand-teal transition-colors font-medium">About
+                        Us</a>
+                    <a href="contact.html"
+                        class="text-gray-700 hover:text-brand-teal transition-colors font-medium">Contact</a>
+                </nav>
+
+                <!-- CTA Buttons -->
+                <div class="hidden md:flex items-center space-x-3">
+                    <!-- Language Switcher -->
+                    <div class="flex items-center space-x-2 mr-4">
+                        <a href="labs.html"
+                            class="px-3 py-1 rounded-full text-sm font-medium bg-brand-teal text-white">EN</a>
+                        <a href="labs-ar.html"
+                            class="px-3 py-1 rounded-full text-sm font-medium text-brand-teal border border-brand-teal hover:bg-brand-teal hover:text-white transition-all">العربية</a>
+                    </div>
+
+                    <a href="tel:+15551234567"
+                        class="text-brand-teal hover:text-brand-navy transition-colors font-semibold">
+                        (555) 123-4567
+                    </a>
+                    <a href="contact.html"
+                        class="bg-brand-teal text-white px-6 py-2.5 rounded-full hover:bg-brand-navy transition-all shadow-lg hover:shadow-xl transform hover:scale-105">
+                        Book Appointment
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="lg:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors" id="mobile-menu-btn">
+                    <svg class="h-6 w-6 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div class="lg:hidden hidden mt-2 pb-2 border-t border-gray-100/50" id="mobile-menu">
+                <nav class="flex flex-col space-y-2 pt-2">
+                    <a href="index.html"
+                        class="text-gray-700 hover:text-brand-teal transition-colors font-medium py-2">Home</a>
+                    <a href="labs.html" class="text-brand-teal font-semibold transition-colors py-2">Laboratory</a>
+                    <a href="dental.html"
+                        class="text-gray-700 hover:text-brand-teal transition-colors font-medium py-2">Dental Care</a>
+                    <a href="about.html"
+                        class="text-gray-700 hover:text-brand-teal transition-colors font-medium py-2">About Us</a>
+                    <a href="contact.html"
+                        class="text-gray-700 hover:text-brand-teal transition-colors font-medium py-2">Contact</a>
+                    <div class="pt-3 border-t border-gray-100">
+                        <!-- Mobile Language Switcher -->
+                        <div class="flex items-center space-x-2 mb-3">
+                            <a href="labs.html"
+                                class="px-3 py-1 rounded-full text-sm font-medium bg-brand-teal text-white">EN</a>
+                            <a href="labs-ar.html"
+                                class="px-3 py-1 rounded-full text-sm font-medium text-brand-teal border border-brand-teal">العربية</a>
+                        </div>
+                        <a href="tel:+15551234567"
+                            class="block text-brand-teal hover:text-brand-navy transition-colors font-semibold py-2">
+                            (555) 123-4567
+                        </a>
+                        <a href="contact.html"
+                            class="block bg-brand-teal text-white px-6 py-2.5 rounded-full hover:bg-brand-navy transition-all text-center mt-2">
+                            Book Appointment
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="relative overflow-hidden bg-gradient-to-br from-brand-teal/10 via-white to-brand-blue/5 py-20">
+            <div class="container mx-auto px-6">
+                <div class="max-w-4xl mx-auto text-center">
+                    <div class="inline-flex items-center bg-brand-teal/10 rounded-full px-4 py-2 mb-6">
+                        <span class="text-sm font-semibold text-brand-teal">🔬 CLIA Certified Laboratory</span>
+                    </div>
+                    <h1 class="text-5xl md:text-6xl font-bold text-brand-navy mb-6 font-display">
+                        WeCare Medical <span class="text-brand-teal">Laboratories</span>
+                    </h1>
+                    <p class="text-xl text-gray-600 leading-relaxed mb-8">
+                        Our laboratories provide fast, accurate, and diagnostic results, relying on the latest advanced
+                        technologies. From routine blood tests to specialized laboratory analyses, we offer integrated
+                        laboratory services, making same-day results the standard for most tests.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a href="contact.html"
+                            class="bg-brand-teal text-white px-8 py-4 rounded-xl font-semibold shadow-lg hover:shadow-xl hover:bg-brand-navy transition-all transform hover:scale-105">
+                            Schedule Lab Test
+                        </a>
+                        <a href="#services"
+                            class="border-2 border-brand-teal text-brand-teal px-8 py-4 rounded-xl font-semibold hover:bg-brand-teal hover:text-white transition-all">
+                            View Services
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lab Services Section -->
+        <style>
+            .lab-card {
+                transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+            }
+
+            .lab-card:hover {
+                transform: translateY(-6px);
+            }
+
+            .lab-card .card-icon {
+                transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+            }
+
+            .lab-card:hover .card-icon {
+                transform: scale(1.1);
+            }
+
+            .lab-card-reveal {
+                opacity: 0;
+                transform: translateY(28px);
+                transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1), transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+            }
+
+            .lab-card-reveal.revealed {
+                opacity: 1;
+                transform: translateY(0);
+            }
+
+            .check-item {
+                display: flex;
+                align-items: flex-start;
+                gap: 8px;
+            }
+
+            .check-item svg {
+                flex-shrink: 0;
+                margin-top: 2px;
+            }
+        </style>
+        <section id="services" class="py-24 bg-gradient-to-b from-white to-gray-50/80">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <p class="text-sm font-semibold tracking-widest uppercase text-brand-teal mb-3">Our Departments</p>
+                    <h2 class="text-4xl md:text-5xl font-bold text-brand-navy mb-5 font-display">
+                        Medical Laboratory Services
+                    </h2>
+                    <p class="text-lg text-gray-500 max-w-2xl mx-auto leading-relaxed">
+                        Comprehensive diagnostic testing powered by advanced technology and expert analysis
+                    </p>
+                </div>
+
+                <!-- Services Grid -->
+                <div class="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+
+                    <!-- Clinical Chemistry -->
+                    <div
+                        class="lab-card lab-card-reveal bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl overflow-hidden">
+                        <div class="h-1 bg-gradient-to-r from-brand-teal to-emerald-400"></div>
+                        <div class="p-7">
+                            <div class="flex items-start gap-4 mb-5">
+                                <div
+                                    class="card-icon w-14 h-14 bg-brand-teal/8 rounded-xl flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-7 h-7 text-brand-teal" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714a2.25 2.25 0 00.659 1.591L19 14.5M14.25 3.104c.251.023.501.05.75.082M19 14.5l-1.299 4.887a1.5 1.5 0 01-1.451 1.113H7.75a1.5 1.5 0 01-1.451-1.113L5 14.5m14 0H5" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-bold text-brand-navy">Clinical Chemistry</h3>
+                                    <p class="text-sm text-gray-400 mt-0.5">Blood & metabolic analysis</p>
+                                </div>
+                            </div>
+                            <ul class="space-y-3 text-sm text-gray-600">
+                                <li class="check-item">
+                                    <svg class="w-4 h-4 text-brand-teal" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    <span>Comprehensive Metabolic Panel (CMP)</span>
+                                </li>
+                                <li class="check-item">
+                                    <svg class="w-4 h-4 text-brand-teal" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    <span>Lipid profile & cholesterol tests</span>
+                                </li>
+                                <li class="check-item">
+                                    <svg class="w-4 h-4 text-brand-teal" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    <span>Liver & kidney function panels</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Hormonal Tests -->
+                    <div
+                        class="lab-card lab-card-reveal bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl overflow-hidden">
+                        <div class="h-1 bg-gradient-to-r from-brand-blue to-sky-400"></div>
+                        <div class="p-7">
+                            <div class="flex items-start gap-4 mb-5">
+                                <div
+                                    class="card-icon w-14 h-14 bg-brand-blue/8 rounded-xl flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-7 h-7 text-brand-blue" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0118 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1 3m8.5-3l1 3m0 0l.5 1.5m-.5-1.5h-9.5m0 0l-.5 1.5m.75-9l3-3 2.148 2.148A12.061 12.061 0 0116.5 7.605" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-bold text-brand-navy">Hormonal Tests</h3>
+                                    <p class="text-sm text-gray-400 mt-0.5">Endocrine system profiling</p>
+                                </div>
+                            </div>
+                            <ul class="space-y-3 text-sm text-gray-600">
+                                <li class="check-item">
+                                    <svg class="w-4 h-4 text-brand-blue" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    <span>Thyroid hormones (TSH, T3, T4)</span>
+                                </li>
+                                <li class="check-item">
+                                    <svg class="w-4 h-4 text-brand-blue" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    <span>Reproductive hormones</span>
+                                </li>
+                                <li class="check-item">
+                                    <svg class="w-4 h-4 text-brand-blue" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    <span>Cortisol & stress hormones</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Cardiac Markers -->
+                    <div
+                        class="lab-card lab-card-reveal bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl overflow-hidden">
+                        <div class="h-1 bg-gradient-to-r from-rose-500 to-brand-gold"></div>
+                        <div class="p-7">
+                            <div class="flex items-start gap-4 mb-5">
+                                <div
+                                    class="card-icon w-14 h-14 bg-rose-500/8 rounded-xl flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-7 h-7 text-rose-500" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-bold text-brand-navy">Cardiac Markers</h3>
+                                    <p class="text-sm text-gray-400 mt-0.5">Cardiovascular health assessment</p>
+                                </div>
+                            </div>
+                            <ul class="space-y-3 text-sm text-gray-600">
+                                <li class="check-item">
+                                    <svg class="w-4 h-4 text-rose-500" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    <span>Evaluating heart health</span>
+                                </li>
+                                <li class="check-item">
+                                    <svg class="w-4 h-4 text-rose-500" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    <span>Measuring cardiac enzymes</span>
+                                </li>
+                                <li class="check-item">
+                                    <svg class="w-4 h-4 text-rose-500" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    <span>Assessing cardiovascular risk</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Infectious Disease Testing -->
+                    <div
+                        class="lab-card lab-card-reveal bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl overflow-hidden">
+                        <div class="h-1 bg-gradient-to-r from-amber-500 to-brand-gold"></div>
+                        <div class="p-7">
+                            <div class="flex items-start gap-4 mb-5">
+                                <div
+                                    class="card-icon w-14 h-14 bg-amber-500/8 rounded-xl flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-7 h-7 text-amber-600" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-bold text-brand-navy">Infectious Disease Testing</h3>
+                                    <p class="text-sm text-gray-400 mt-0.5">Pathogen detection & screening</p>
+                                </div>
+                            </div>
+                            <ul class="space-y-3 text-sm text-gray-600">
+                                <li class="check-item">
+                                    <svg class="w-4 h-4 text-amber-600" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    <span>Coronavirus (COVID-19)</span>
+                                </li>
+                                <li class="check-item">
+                                    <svg class="w-4 h-4 text-amber-600" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    <span>Sexually transmitted diseases</span>
+                                </li>
+                                <li class="check-item">
+                                    <svg class="w-4 h-4 text-amber-600" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    <span>Various microbiological tests</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Same-Day Results Badge -->
+                <div class="mt-14 text-center">
+                    <div
+                        class="inline-flex items-center bg-white border border-brand-teal/20 rounded-full px-6 py-3 shadow-sm">
+                        <svg class="w-5 h-5 text-brand-teal mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd"
+                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        <span class="text-brand-teal font-semibold text-sm">Same-Day Results Available for Most
+                            Tests</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Location Section -->
+        <section class="py-20 bg-brand-light">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl md:text-5xl font-bold text-brand-navy mb-4 font-display">
+                        Visit Our Laboratory
+                    </h2>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                        Find us at our convenient location in Alexandria
+                    </p>
+                </div>
+
+                <div class="max-w-5xl mx-auto">
+                    <div class="rounded-2xl overflow-hidden shadow-2xl">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13457.14438210152!2d29.901604157451967!3d31.207484080876025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c5e9a36ca275%3A0x88655144f1d020a6!2sWeCare%20Labs!5e0!3m2!1sen!2seg!4v1770337253185!5m2!1sen!2seg"
+                            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-20 bg-gradient-to-br from-brand-teal to-brand-navy text-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-4xl font-bold mb-6 font-display">Ready to Schedule Your Lab Test?</h2>
+                <p class="text-xl text-gray-100 mb-8 max-w-2xl mx-auto">
+                    Fast, accurate results with convenient scheduling and same-day service
+                </p>
+                <a href="contact.html"
+                    class="inline-block bg-white text-brand-navy px-8 py-4 rounded-xl font-bold text-lg shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all">
+                    Book Your Appointment
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-brand-navy text-white">
+        <div class="container mx-auto px-6 py-16">
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div class="md:col-span-2">
+                    <div class="flex items-center space-x-3 mb-4">
+                        <img src="images/llc.png" alt="WeCare Health & Dental" class="h-12 w-auto">
+                        <div>
+                            <h3 class="text-2xl font-bold font-display">WeCare</h3>
+                            <p class="text-gray-300 text-sm">Health & Dental</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 leading-relaxed mb-6 max-w-md">
+                        Providing integrated healthcare services with state-of-the-art medical laboratory testing
+                        and comprehensive dental care. Your health is our priority.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#"
+                            class="w-10 h-10 bg-brand-teal rounded-full flex items-center justify-center hover:bg-white hover:text-brand-teal transition-all">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+                            </svg>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 bg-brand-teal rounded-full flex items-center justify-center hover:bg-white hover:text-brand-teal transition-all">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z" />
+                            </svg>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 bg-brand-teal rounded-full flex items-center justify-center hover:bg-white hover:text-brand-teal transition-all">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="index.html" class="hover:text-brand-teal transition-colors">Home</a></li>
+                        <li><a href="labs.html" class="hover:text-brand-teal transition-colors">Laboratory Testing</a>
+                        </li>
+                        <li><a href="dental.html" class="hover:text-brand-teal transition-colors">Dental Care</a></li>
+                        <li><a href="about.html" class="hover:text-brand-teal transition-colors">About Us</a></li>
+                        <li><a href="contact.html" class="hover:text-brand-teal transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Services</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="labs.html" class="hover:text-brand-teal transition-colors">Blood Chemistry</a></li>
+                        <li><a href="labs.html" class="hover:text-brand-teal transition-colors">Hormone Testing</a></li>
+                        <li><a href="dental.html" class="hover:text-brand-teal transition-colors">Preventive
+                                Dentistry</a>
+                        </li>
+                        <li><a href="dental.html" class="hover:text-brand-teal transition-colors">Cosmetic Dentistry</a>
+                        </li>
+                        <li><a href="contact.html" class="hover:text-brand-teal transition-colors">Emergency Care</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="border-t border-gray-700 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm">
+                    &copy; 2025 WeCare Health & Dental. All Rights Reserved.
+                </p>
+                <div class="flex space-x-6 mt-4 md:mt-0 text-sm text-gray-400">
+                    <a href="#" class="hover:text-brand-teal transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-brand-teal transition-colors">Terms of Service</a>
+                    <a href="#" class="hover:text-brand-teal transition-colors">HIPAA Compliance</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile Menu Toggle
+        document.addEventListener('DOMContentLoaded', function () {
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            if (mobileMenuBtn && mobileMenu) {
+                mobileMenuBtn.addEventListener('click', function () {
+                    mobileMenu.classList.toggle('hidden');
+
+                    // Toggle icon
+                    const icon = mobileMenuBtn.querySelector('svg');
+                    if (mobileMenu.classList.contains('hidden')) {
+                        icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />';
+                    } else {
+                        icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />';
+                    }
+                });
+
+                // Close mobile menu when clicking on links
+                const mobileLinks = mobileMenu.querySelectorAll('a');
+                mobileLinks.forEach(link => {
+                    link.addEventListener('click', function () {
+                        mobileMenu.classList.add('hidden');
+                        const icon = mobileMenuBtn.querySelector('svg');
+                        icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />';
+                    });
+                });
+            }
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add scroll effect to header
+        window.addEventListener('scroll', function () {
+            const navbar = document.getElementById('navbar');
+            const logo = document.getElementById('navbar-logo');
+
+            if (window.scrollY > 50) {
+                navbar.classList.add('shadow-md', 'bg-white/80');
+                navbar.classList.remove('shadow-sm', 'bg-white/70');
+                logo.classList.add('h-20');
+                logo.classList.remove('h-28');
+            } else {
+                navbar.classList.remove('shadow-md', 'bg-white/80');
+                navbar.classList.add('shadow-sm', 'bg-white/70');
+                logo.classList.remove('h-20');
+                logo.classList.add('h-28');
+            }
+        });
+
+        // Staggered card reveal on scroll
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach((entry, i) => {
+                if (entry.isIntersecting) {
+                    const cards = document.querySelectorAll('.lab-card-reveal');
+                    cards.forEach((card, index) => {
+                        setTimeout(() => {
+                            card.classList.add('revealed');
+                        }, index * 120);
+                    });
+                    revealObserver.disconnect();
+                }
+            });
+        }, { threshold: 0.15 });
+
+        const firstCard = document.querySelector('.lab-card-reveal');
+        if (firstCard) revealObserver.observe(firstCard);
+    </script>
+
+</body>
+
+</html>

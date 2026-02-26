@@ -1,0 +1,4 @@
+---------- WECARE ----------
+1) install tailwind locally
+2) Compress Videos 
+3) Custom Form + Google Backend (Option B) -> for the form 
