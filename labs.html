@@ -7,16 +7,15 @@
     <title>WeCare Labs - Advanced Medical Laboratory Testing</title>
     <meta name="description"
         content="State-of-the-art medical laboratory testing with same-day results. CLIA certified facility offering comprehensive diagnostic services.">
-    <link rel="preconnect" href="https://rsms.me/">
-    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="dist/output.css">
 </head>
 
-<body class="bg-brand-light font-sans antialiased">
+<body class="bg-brand-light font-sans antialiased text-gray-800">
 
     <!-- Header -->
     <header id="navbar"
@@ -26,7 +25,7 @@
                 <!-- Logo -->
                 <div class="flex items-center">
                     <a href="index.html">
-                        <img id="navbar-logo" src="./images/llc.png" alt="WeCare Health & Dental"
+                        <img id="navbar-logo" src="./images/llc.png" alt="WeCare Health &amp; Dental"
                             class="h-28 w-auto hover:scale-105 transition-all duration-300 drop-shadow-lg">
                     </a>
                 </div>
@@ -37,8 +36,7 @@
                         class="text-gray-700 hover:text-brand-teal transition-colors font-medium">Home</a>
                     <a href="labs.html" class="text-brand-teal font-semibold transition-colors">Laboratory</a>
                     <a href="dental.html"
-                        class="text-gray-700 hover:text-brand-teal transition-colors font-medium">Dental
-                        Care</a>
+                        class="text-gray-700 hover:text-brand-teal transition-colors font-medium">Dental Care</a>
                     <a href="about.html" class="text-gray-700 hover:text-brand-teal transition-colors font-medium">About
                         Us</a>
                     <a href="contact.html"
@@ -51,7 +49,7 @@
                     <div class="flex items-center space-x-2 mr-4">
                         <a href="labs.html"
                             class="px-3 py-1 rounded-full text-sm font-medium bg-brand-teal text-white">EN</a>
-                        <a href="labs-ar.html"
+                        <a href="ar/labs.html"
                             class="px-3 py-1 rounded-full text-sm font-medium text-brand-teal border border-brand-teal hover:bg-brand-teal hover:text-white transition-all">العربية</a>
                     </div>
 
@@ -59,9 +57,13 @@
                         class="text-brand-teal hover:text-brand-navy transition-colors font-semibold">
                         (555) 123-4567
                     </a>
-                    <a href="contact.html"
-                        class="bg-brand-teal text-white px-6 py-2.5 rounded-full hover:bg-brand-navy transition-all shadow-lg hover:shadow-xl transform hover:scale-105">
-                        Book Appointment
+                    <a href="https://wecare.almukhtabarat.net/patient/" target="_blank"
+                        class="bg-brand-teal text-white px-6 py-2.5 rounded-full font-semibold hover:bg-brand-navy transition-all shadow-lg hover:shadow-xl transform hover:scale-105 inline-flex items-center gap-2">
+                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                        </svg>
+                        View Lab Results
                     </a>
                 </div>
 
@@ -86,21 +88,22 @@
                         class="text-gray-700 hover:text-brand-teal transition-colors font-medium py-2">About Us</a>
                     <a href="contact.html"
                         class="text-gray-700 hover:text-brand-teal transition-colors font-medium py-2">Contact</a>
+
                     <div class="pt-3 border-t border-gray-100">
                         <!-- Mobile Language Switcher -->
                         <div class="flex items-center space-x-2 mb-3">
                             <a href="labs.html"
                                 class="px-3 py-1 rounded-full text-sm font-medium bg-brand-teal text-white">EN</a>
-                            <a href="labs-ar.html"
+                            <a href="ar/labs.html"
                                 class="px-3 py-1 rounded-full text-sm font-medium text-brand-teal border border-brand-teal">العربية</a>
                         </div>
                         <a href="tel:+15551234567"
                             class="block text-brand-teal hover:text-brand-navy transition-colors font-semibold py-2">
                             (555) 123-4567
                         </a>
-                        <a href="contact.html"
-                            class="block bg-brand-teal text-white px-6 py-2.5 rounded-full hover:bg-brand-navy transition-all text-center mt-2">
-                            Book Appointment
+                        <a href="https://wecare.almukhtabarat.net/patient/" target="_blank"
+                            class="block bg-brand-teal text-white px-6 py-2.5 rounded-full text-center font-semibold hover:bg-brand-navy transition-all mt-2">
+                            View Lab Results
                         </a>
                     </div>
                 </nav>
@@ -110,29 +113,55 @@
 
     <main>
         <!-- Hero Section -->
-        <section class="relative overflow-hidden bg-gradient-to-br from-brand-teal/10 via-white to-brand-blue/5 py-20">
-            <div class="container mx-auto px-6">
-                <div class="max-w-4xl mx-auto text-center">
-                    <div class="inline-flex items-center bg-brand-teal/10 rounded-full px-4 py-2 mb-6">
-                        <span class="text-sm font-semibold text-brand-teal">🔬 CLIA Certified Laboratory</span>
+        <section class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden bg-brand-light">
+            <div class="absolute inset-0 z-0">
+                <!-- Using a subtle pattern or background image if available, fallback to gradient -->
+                <div class="absolute inset-0 bg-gradient-to-r from-brand-light via-brand-light/95 to-brand-light/40">
+                </div>
+            </div>
+
+            <div class="container mx-auto px-6 relative z-10">
+                <div class="max-w-3xl">
+                    <div class="inline-flex items-center gap-3 mb-8">
+                        <span class="h-px w-8 bg-brand-teal"></span>
+                        <span class="text-brand-teal font-semibold tracking-widest uppercase text-sm">Diagnostic
+                            Excellence</span>
                     </div>
-                    <h1 class="text-5xl md:text-6xl font-bold text-brand-navy mb-6 font-display">
-                        WeCare Medical <span class="text-brand-teal">Laboratories</span>
+
+                    <h1
+                        class="text-5xl md:text-6xl lg:text-[72px] font-bold text-brand-navy mb-6 font-display leading-[1.1] tracking-tight">
+                        Diagnostic Precision at <br /><span class="text-brand-teal text-opacity-90">the Speed of
+                            Care.</span>
                     </h1>
-                    <p class="text-xl text-gray-600 leading-relaxed mb-8">
+
+                    <p class="text-xl text-gray-600 mb-10 leading-relaxed max-w-2xl font-light">
                         Our laboratories provide fast, accurate, and diagnostic results, relying on the latest advanced
                         technologies. From routine blood tests to specialized laboratory analyses, we offer integrated
                         laboratory services, making same-day results the standard for most tests.
                     </p>
-                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                        <a href="contact.html"
-                            class="bg-brand-teal text-white px-8 py-4 rounded-xl font-semibold shadow-lg hover:shadow-xl hover:bg-brand-navy transition-all transform hover:scale-105">
-                            Schedule Lab Test
-                        </a>
-                        <a href="#services"
-                            class="border-2 border-brand-teal text-brand-teal px-8 py-4 rounded-xl font-semibold hover:bg-brand-teal hover:text-white transition-all">
-                            View Services
-                        </a>
+
+                    <div class="flex items-center gap-6">
+                        <div class="flex items-center gap-3">
+                            <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-sm">
+                                <svg class="w-6 h-6 text-brand-teal" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                            </div>
+                            <span class="text-sm font-semibold text-brand-navy">CLIA Certified</span>
+                        </div>
+                        <div class="w-px h-10 bg-gray-200"></div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-sm">
+                                <svg class="w-6 h-6 text-brand-teal" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                            </div>
+                            <span class="text-sm font-semibold text-brand-navy">Same-Day Results</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -196,7 +225,7 @@
                     <!-- Clinical Chemistry -->
                     <div
                         class="lab-card lab-card-reveal bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl overflow-hidden">
-                        <div class="h-1 bg-gradient-to-r from-brand-teal to-emerald-400"></div>
+                        <div class="h-1 bg-gradient-to-r from-brand-teal to-teal-400"></div>
                         <div class="p-7">
                             <div class="flex items-start gap-4 mb-5">
                                 <div
@@ -244,12 +273,12 @@
                     <!-- Hormonal Tests -->
                     <div
                         class="lab-card lab-card-reveal bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl overflow-hidden">
-                        <div class="h-1 bg-gradient-to-r from-brand-blue to-sky-400"></div>
+                        <div class="h-1 bg-gradient-to-r from-brand-navy to-indigo-400"></div>
                         <div class="p-7">
                             <div class="flex items-start gap-4 mb-5">
                                 <div
-                                    class="card-icon w-14 h-14 bg-brand-blue/8 rounded-xl flex items-center justify-center flex-shrink-0">
-                                    <svg class="w-7 h-7 text-brand-blue" fill="none" viewBox="0 0 24 24"
+                                    class="card-icon w-14 h-14 bg-brand-navy/8 rounded-xl flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-7 h-7 text-brand-navy" fill="none" viewBox="0 0 24 24"
                                         stroke-width="1.5" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round"
                                             d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0118 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1 3m8.5-3l1 3m0 0l.5 1.5m-.5-1.5h-9.5m0 0l-.5 1.5m.75-9l3-3 2.148 2.148A12.061 12.061 0 0116.5 7.605" />
@@ -262,7 +291,7 @@
                             </div>
                             <ul class="space-y-3 text-sm text-gray-600">
                                 <li class="check-item">
-                                    <svg class="w-4 h-4 text-brand-blue" fill="currentColor" viewBox="0 0 20 20">
+                                    <svg class="w-4 h-4 text-brand-navy" fill="currentColor" viewBox="0 0 20 20">
                                         <path fill-rule="evenodd"
                                             d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                                             clip-rule="evenodd" />
@@ -270,7 +299,7 @@
                                     <span>Thyroid hormones (TSH, T3, T4)</span>
                                 </li>
                                 <li class="check-item">
-                                    <svg class="w-4 h-4 text-brand-blue" fill="currentColor" viewBox="0 0 20 20">
+                                    <svg class="w-4 h-4 text-brand-navy" fill="currentColor" viewBox="0 0 20 20">
                                         <path fill-rule="evenodd"
                                             d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                                             clip-rule="evenodd" />
@@ -278,7 +307,7 @@
                                     <span>Reproductive hormones</span>
                                 </li>
                                 <li class="check-item">
-                                    <svg class="w-4 h-4 text-brand-blue" fill="currentColor" viewBox="0 0 20 20">
+                                    <svg class="w-4 h-4 text-brand-navy" fill="currentColor" viewBox="0 0 20 20">
                                         <path fill-rule="evenodd"
                                             d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                                             clip-rule="evenodd" />
@@ -292,12 +321,12 @@
                     <!-- Cardiac Markers -->
                     <div
                         class="lab-card lab-card-reveal bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl overflow-hidden">
-                        <div class="h-1 bg-gradient-to-r from-rose-500 to-brand-gold"></div>
+                        <div class="h-1 bg-gradient-to-r from-brand-teal to-teal-400"></div>
                         <div class="p-7">
                             <div class="flex items-start gap-4 mb-5">
                                 <div
-                                    class="card-icon w-14 h-14 bg-rose-500/8 rounded-xl flex items-center justify-center flex-shrink-0">
-                                    <svg class="w-7 h-7 text-rose-500" fill="none" viewBox="0 0 24 24"
+                                    class="card-icon w-14 h-14 bg-brand-teal/8 rounded-xl flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-7 h-7 text-brand-teal" fill="none" viewBox="0 0 24 24"
                                         stroke-width="1.5" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round"
                                             d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
@@ -310,7 +339,7 @@
                             </div>
                             <ul class="space-y-3 text-sm text-gray-600">
                                 <li class="check-item">
-                                    <svg class="w-4 h-4 text-rose-500" fill="currentColor" viewBox="0 0 20 20">
+                                    <svg class="w-4 h-4 text-brand-teal" fill="currentColor" viewBox="0 0 20 20">
                                         <path fill-rule="evenodd"
                                             d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                                             clip-rule="evenodd" />
@@ -318,7 +347,7 @@
                                     <span>Evaluating heart health</span>
                                 </li>
                                 <li class="check-item">
-                                    <svg class="w-4 h-4 text-rose-500" fill="currentColor" viewBox="0 0 20 20">
+                                    <svg class="w-4 h-4 text-brand-teal" fill="currentColor" viewBox="0 0 20 20">
                                         <path fill-rule="evenodd"
                                             d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                                             clip-rule="evenodd" />
@@ -326,7 +355,7 @@
                                     <span>Measuring cardiac enzymes</span>
                                 </li>
                                 <li class="check-item">
-                                    <svg class="w-4 h-4 text-rose-500" fill="currentColor" viewBox="0 0 20 20">
+                                    <svg class="w-4 h-4 text-brand-teal" fill="currentColor" viewBox="0 0 20 20">
                                         <path fill-rule="evenodd"
                                             d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                                             clip-rule="evenodd" />
@@ -340,12 +369,12 @@
                     <!-- Infectious Disease Testing -->
                     <div
                         class="lab-card lab-card-reveal bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl overflow-hidden">
-                        <div class="h-1 bg-gradient-to-r from-amber-500 to-brand-gold"></div>
+                        <div class="h-1 bg-gradient-to-r from-brand-navy to-indigo-400"></div>
                         <div class="p-7">
                             <div class="flex items-start gap-4 mb-5">
                                 <div
-                                    class="card-icon w-14 h-14 bg-amber-500/8 rounded-xl flex items-center justify-center flex-shrink-0">
-                                    <svg class="w-7 h-7 text-amber-600" fill="none" viewBox="0 0 24 24"
+                                    class="card-icon w-14 h-14 bg-brand-navy/8 rounded-xl flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-7 h-7 text-brand-navy" fill="none" viewBox="0 0 24 24"
                                         stroke-width="1.5" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round"
                                             d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z" />
@@ -358,7 +387,7 @@
                             </div>
                             <ul class="space-y-3 text-sm text-gray-600">
                                 <li class="check-item">
-                                    <svg class="w-4 h-4 text-amber-600" fill="currentColor" viewBox="0 0 20 20">
+                                    <svg class="w-4 h-4 text-brand-navy" fill="currentColor" viewBox="0 0 20 20">
                                         <path fill-rule="evenodd"
                                             d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                                             clip-rule="evenodd" />
@@ -366,7 +395,7 @@
                                     <span>Coronavirus (COVID-19)</span>
                                 </li>
                                 <li class="check-item">
-                                    <svg class="w-4 h-4 text-amber-600" fill="currentColor" viewBox="0 0 20 20">
+                                    <svg class="w-4 h-4 text-brand-navy" fill="currentColor" viewBox="0 0 20 20">
                                         <path fill-rule="evenodd"
                                             d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                                             clip-rule="evenodd" />
@@ -374,7 +403,7 @@
                                     <span>Sexually transmitted diseases</span>
                                 </li>
                                 <li class="check-item">
-                                    <svg class="w-4 h-4 text-amber-600" fill="currentColor" viewBox="0 0 20 20">
+                                    <svg class="w-4 h-4 text-brand-navy" fill="currentColor" viewBox="0 0 20 20">
                                         <path fill-rule="evenodd"
                                             d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                                             clip-rule="evenodd" />
@@ -428,36 +457,42 @@
         </section>
 
         <!-- CTA Section -->
-        <section class="py-20 bg-gradient-to-br from-brand-teal to-brand-navy text-white">
-            <div class="container mx-auto px-6 text-center">
-                <h2 class="text-4xl font-bold mb-6 font-display">Ready to Schedule Your Lab Test?</h2>
-                <p class="text-xl text-gray-100 mb-8 max-w-2xl mx-auto">
-                    Fast, accurate results with convenient scheduling and same-day service
+        <section class="py-24 md:py-32 bg-brand-navy text-white text-center">
+            <div class="container mx-auto px-6 max-w-3xl">
+                <h2 class="text-[40px] font-bold mb-6 font-display leading-[1.2]">Ready to Schedule Your Lab Test?</h2>
+                <p class="text-xl text-white/80 font-light mb-10 leading-relaxed">
+                    Fast, accurate, and accessible laboratory services with convenient scheduling.
                 </p>
-                <a href="contact.html"
-                    class="inline-block bg-white text-brand-navy px-8 py-4 rounded-xl font-bold text-lg shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all">
-                    Book Your Appointment
-                </a>
+                <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                    <a href="contact.html"
+                        class="w-full sm:w-auto bg-brand-teal text-white px-8 py-4 rounded-full font-semibold shadow-lg hover:shadow-xl hover:bg-white hover:text-brand-teal transition-all text-center">
+                        Book Your Appointment
+                    </a>
+                    <a href="tel:+15551234567"
+                        class="w-full sm:w-auto text-white/80 hover:text-white transition-colors py-4">
+                        (555) 123-4567
+                    </a>
+                </div>
             </div>
         </section>
     </main>
 
     <!-- Footer -->
-    <footer id="contact" class="bg-brand-navy text-white">
-        <div class="container mx-auto px-6 py-16">
-            <div class="grid md:grid-cols-4 gap-8">
-                <!-- Company Info -->
+    <footer id="contact" class="bg-brand-navy text-white border-t border-white/5">
+        <div class="container mx-auto px-6 py-16 md:py-20">
+            <div class="grid md:grid-cols-4 gap-12 lg:gap-8">
+                <!-- Branding & Info -->
                 <div class="md:col-span-2">
-                    <div class="flex items-center space-x-3 mb-4">
-                        <img src="images/llc.png" alt="WeCare Health & Dental" class="h-12 w-auto">
+                    <div class="flex items-center space-x-3 mb-6">
+                        <img src="./images/llc.png" alt="WeCare" class="h-12 w-auto brightness-0 invert">
                         <div>
-                            <h3 class="text-2xl font-bold font-display">WeCare</h3>
-                            <p class="text-gray-300 text-sm">Health & Dental</p>
+                            <h3 class="text-2xl font-bold font-display tracking-wide">WeCare</h3>
+                            <p class="text-brand-teal font-medium text-sm tracking-widest uppercase">Health & Dental</p>
                         </div>
                     </div>
-                    <p class="text-gray-300 leading-relaxed mb-6 max-w-md">
-                        Providing integrated healthcare services with state-of-the-art medical laboratory testing
-                        and comprehensive dental care. Your health is our priority.
+                    <p class="text-white/70 font-light leading-relaxed mb-8 max-w-sm">
+                        Providing integrated healthcare services with state-of-the-art medical laboratory testing and
+                        comprehensive dental care. Your health is our priority.
                     </p>
                     <div class="flex space-x-4">
                         <a href="#"
@@ -472,13 +507,6 @@
                             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                                 <path
                                     d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z" />
-                            </svg>
-                        </a>
-                        <a href="#"
-                            class="w-10 h-10 bg-brand-teal rounded-full flex items-center justify-center hover:bg-white hover:text-brand-teal transition-all">
-                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                                <path
-                                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
                             </svg>
                         </a>
                     </div>
@@ -504,8 +532,7 @@
                         <li><a href="labs.html" class="hover:text-brand-teal transition-colors">Blood Chemistry</a></li>
                         <li><a href="labs.html" class="hover:text-brand-teal transition-colors">Hormone Testing</a></li>
                         <li><a href="dental.html" class="hover:text-brand-teal transition-colors">Preventive
-                                Dentistry</a>
-                        </li>
+                                Dentistry</a></li>
                         <li><a href="dental.html" class="hover:text-brand-teal transition-colors">Cosmetic Dentistry</a>
                         </li>
                         <li><a href="contact.html" class="hover:text-brand-teal transition-colors">Emergency Care</a>
@@ -518,6 +545,7 @@
             <div class="border-t border-gray-700 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
                 <p class="text-gray-400 text-sm">
                     &copy; 2025 WeCare Health & Dental. All Rights Reserved.
+                    <span class="text-brand-teal ml-1">Demo Version.</span>
                 </p>
                 <div class="flex space-x-6 mt-4 md:mt-0 text-sm text-gray-400">
                     <a href="#" class="hover:text-brand-teal transition-colors">Privacy Policy</a>
@@ -577,18 +605,21 @@
         // Add scroll effect to header
         window.addEventListener('scroll', function () {
             const navbar = document.getElementById('navbar');
+            const navbarContainer = navbar.querySelector('.container');
             const logo = document.getElementById('navbar-logo');
 
             if (window.scrollY > 50) {
-                navbar.classList.add('shadow-md', 'bg-white/80');
-                navbar.classList.remove('shadow-sm', 'bg-white/70');
-                logo.classList.add('h-20');
-                logo.classList.remove('h-28');
+                navbar.classList.add('shadow-md', 'bg-white/95');
+                navbarContainer.classList.add('py-2');
+                navbarContainer.classList.remove('py-4');
+                logo.classList.add('h-10');
+                logo.classList.remove('h-12');
             } else {
-                navbar.classList.remove('shadow-md', 'bg-white/80');
-                navbar.classList.add('shadow-sm', 'bg-white/70');
-                logo.classList.remove('h-20');
-                logo.classList.add('h-28');
+                navbar.classList.remove('shadow-md', 'bg-white/95');
+                navbarContainer.classList.remove('py-2');
+                navbarContainer.classList.add('py-4');
+                logo.classList.remove('h-10');
+                logo.classList.add('h-12');
             }
         });
 

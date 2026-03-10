@@ -1,11 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-    content: ["./*.html"],
+    content: ["./*.html", "./ar/*.html"],
     theme: {
         extend: {
             fontFamily: {
-                sans: ['Inter', 'Tajawal', 'sans-serif'],
-                display: ['Poppins', 'Cairo', 'sans-serif'],
+                sans: ['Manrope', 'Inter', 'Tajawal', 'sans-serif'],
+                display: ['Manrope', 'Poppins', 'Cairo', 'sans-serif'],
             },
             colors: {
                 'brand-teal': '#0D9488',
